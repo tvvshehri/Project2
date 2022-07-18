@@ -9,12 +9,11 @@ with open('Song.txt', 'w') as f:
 
         try:
             txt= page.extractText()
-            print(' '.center(100, '-'))
+            print(''.center(100, '-'))
         except:
             pass
         else:
-            f.write('\npage{0} \n'.format(page_num+1))
+            f.write('Page {0}\n'.format(page_num+1))
             f.write(''.center(100,'-'))
-            f.write('\n')
             f.write(txt)
     f.close()
