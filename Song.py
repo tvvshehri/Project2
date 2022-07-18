@@ -15,5 +15,6 @@ with open('Song.txt', 'w') as f:
         else:
             f.write('Page {0}\n'.format(page_num+1))
             f.write(''.center(100,'-'))
+            f.write('\n')
             f.write(txt)
     f.close()
