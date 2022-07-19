@@ -15,7 +15,7 @@ def pdf2txt(PDF_File, TXT_File):
         interpreter.process_page(page)
 
     txt = retData.getvalue()
-    with open(TXT_File, 'w') as f:
+    with open(TXT_File, 'w', encoding="utf-8") as f:
         f.write(txt)
 
 PDF_File = 'Converter.pdf'
